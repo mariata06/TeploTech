@@ -1,0 +1,24 @@
+.navigation {
+  max-width: 1764px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    @include list-reset;
+    display: flex;
+    width: 950px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  a {
+    color: $black;
+    text-transform: uppercase;
+  }
+}
