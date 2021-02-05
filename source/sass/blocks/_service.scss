@@ -1,0 +1,104 @@
+.service {
+  background: $white;
+  background-image: radial-gradient($light-grey-2 7%, transparent 0),
+    radial-gradient($light-grey-2 7%, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.service__content {
+  padding: 110px 52px;
+
+  h2 {
+    @include reset;
+    @include title ($font-36, $line-height-43, $bold, $black);
+    margin-bottom: 140px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      @include title-after;
+    }
+  }
+}
+
+.service__list {
+  @include list-reset;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.service__item {
+  margin-right: 50px;
+  position: relative;
+}
+
+.service__item-desc {
+  padding: 36px 40px 60px 26px;
+  position: absolute;
+  top: 70px;
+  right: -30px;
+  width: 386px;
+  border: 10px solid $orange;
+
+  span {
+    @include text ($font-24, $line-height-29, $bold);
+    text-transform: uppercase;
+    color: $orange;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 80px;
+    left: -90px;
+  }
+
+  h3 {
+    @include reset;
+    @include title ($font-32, $line-height-38, $bold, $white);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  p,
+  a {
+    @include reset;
+    @include text ($font-16, $line-height-19, $regular);
+    color: $white;
+    margin-bottom: 35px;
+  }
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 15%;
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.service__note {
+  @include text ($font-24, $line-height-29, $regular);
+  text-transform: uppercase;
+  width: 270px;
+  margin-left: auto;
+  margin-right: 50px;
+  text-align: right;
+  position: relative;
+
+  b {
+    @include text ($font-84, $line-height-101, $bold);
+    opacity: 0.2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 110px;
+    right: -20px;
+    top: 15px;
+    background-color: $black;
+  }
+}

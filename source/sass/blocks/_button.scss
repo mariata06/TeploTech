@@ -1,0 +1,16 @@
+.button {
+  font-family: "Roboto", "Arial", sans-serif;
+  border: none;
+  outline: none;
+  background: linear-gradient(42.71deg, #ff8a00 24%, #ffac07 76%);
+  border-radius: 50px;
+  color: $black;
+  text-transform: uppercase;
+  padding: 20px 80px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+}

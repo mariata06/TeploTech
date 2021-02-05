@@ -6,8 +6,11 @@ $blue: #1e90ff; //заменяющий цвет фонов
 $light-blue: #87cefa; //заменяющий цвет контентных картинок
 $light: #f9fbfd; //светлый цвет текста
 $sky: #5496bd; //состояние active для ссылок
-$light-grey: #f2f2f2; //цвет input с hover
+
+
+$light-grey: #f2f2f2; //цвет input с hover и текста
 $black: #000000;
+$orange: #f2994a; //цвте текста и кнопок и иконок
 
 $max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
 $max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)
@@ -33,29 +36,39 @@ $font-20: 20px;
 $font-24: 24px;
 $font-26: 26px;
 $font-28: 28px;
+$font-32: 32px;
 $font-34: 34px;
 $font-36: 36px;
 $font-40: 40px;
 $font-50: 50px;
 $font-54: 54px;
+$font-84: 84px;
 $line-height-12: 12px;
 $line-height-13: 13px;
 $line-height-15: 15px;
 $line-height-17: 17px;
 $line-height-18: 18px;
+$line-height-19: 19px;
 $line-height-20: 20px;
 $line-height-21: 21px;
 $line-height-22: 22px;
 $line-height-24: 24px;
 $line-height-25: 25px;
 $line-height-27: 27px;
+$line-height-29: 29px;
 $line-height-31: 31px;
 $line-height-34: 34px;
 $line-height-36: 36px;
+$line-height-38: 38px;
 $line-height-39: 39px;
 $line-height-42: 42px;
+$line-height-43: 43px;
 $line-height-45: 45px;
 $line-height-51: 51px;
 $line-height-60: 60px;
 $line-height-61: 61px;
 $line-height-66: 66px;
+$line-height-101: 101px;
+
+//задний фон из серых точек
+$light-grey-2: #e0e0e0;

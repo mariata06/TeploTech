@@ -1,0 +1,142 @@
+.intro {
+  min-height: 720px;
+}
+
+.intro__text {
+  height: 100%;
+  background-repeat: no-repeat;
+  //background-size: 100%;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 90px;
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: $white;
+    width: 990px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    color: $orange;
+  }
+
+  p {
+    color: $light-grey;
+    font-size: 18px;
+    line-height: 29px;
+    width: 309px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    @include list-reset;
+    display: flex;
+  }
+
+  li {
+    color: $light-grey;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    margin-right: 67px;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: url("../img/icon-check.svg");
+      position: absolute;
+      left: 0;
+      top: -5px;
+      display: block;
+    }
+  }
+
+  button {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    margin-bottom: 90px;
+  }
+}
+
+.swiper-slide {
+  background-size: 100%;
+}
+
+.swiper-slide--first {
+  background-image: url("../img/slide1-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/slide1-desktop@2x.png");
+  }
+}
+
+.swiper-slide--second {
+  background-image: url("../img/slide2-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/slide2-desktop@2x.png");
+  }
+}
+
+.swiper-slide--third {
+  background-image: url("../img/slide3-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/slide3-desktop@2x.png");
+  }
+}
+
+.swiper-slide--fourth {
+  background-image: url("../img/slide4-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/slide4-desktop@2x.png");
+  }
+}
+
+.intro__swiper-button {
+  width: 87px;
+  height: 80px;
+  background-color: $white;
+  display: block;
+  //position: relative;
+
+  svg {
+    fill: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 15px;
+    min-height: 15px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  &::after {
+    display: none;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.swiper-button-prev {
+  left: 37px;
+}
+
+.swiper-button-next {
+  right: 37px;
+
+  svg {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+}

@@ -1,4 +1,11 @@
-@mixin font($size, $line-height, $weight) {
+@mixin title($size, $line-height, $weight, $color) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin text($size, $line-height, $weight) {
   font-size: $size;
   line-height: $line-height;
   font-weight: $weight;
@@ -8,4 +15,19 @@
   margin: 0;
   list-style: none;
   padding-left: 0;
+}
+
+@mixin reset {
+  margin: 0;
+}
+
+@mixin title-after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: -60px;
+  background-color: $orange;
 }
