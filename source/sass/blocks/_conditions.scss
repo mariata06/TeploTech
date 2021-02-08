@@ -1,0 +1,110 @@
+.conditions {
+  background-color: $white;
+  margin: 0 auto;
+  width: 1920px;
+  padding-top: 110px;
+  padding-bottom: 214px;
+  background-image: url("../img/process-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 250px left 80px;
+  background-size: 45%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/process-bg-desktop@2x.png");
+  }
+
+  @media (max-width: 1440px) {
+    width: 1440px;
+    padding-bottom: 100px;
+  }
+}
+
+.conditions__content {
+  h2 {
+    @include reset;
+    @include title ($font-36, $line-height-43, $bold, $black);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 192px;
+
+    &::after {
+      @include title-after;
+    }
+  }
+
+  ol {
+    @include list-reset;
+    counter-reset: my-counter;
+    /* Задаём имя счетчика */
+    width: 520px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 1440px) {
+      width: 470px;
+    }
+  }
+
+  li {
+    width: 210px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+
+    @media (max-width: 1440px) {
+      width: 200px;
+    }
+
+    &::before {
+      content: counter(my-counter, decimal-leading-zero);
+      /* Выводим число перед каждой цифрой будет ноль */
+      counter-increment: my-counter;
+      /* Увеличиваем значение счётчика */
+      font-family: "Lato", "Arial", sans-serif;
+      font-size: 36px;
+      line-height: 43px;
+      font-weight: 700;
+      left: -90px;
+      top: 0;
+      position: absolute;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      left: -70px;
+      top: 20px;
+    }
+  }
+
+  .conditions__item--smartphone {
+    &::after {
+      content: url("../img/icon-badge-smartphone.svg");
+    }
+  }
+
+  .conditions__item--list {
+    &::after {
+      content: url("../img/icon-badge-list.svg");
+    }
+  }
+
+  .conditions__item--contract {
+    &::after {
+      content: url("../img/icon-badge-contract.svg");
+    }
+  }
+
+  .conditions__item--medal {
+    &::after {
+      content: url("../img/icon-badge-medal.svg");
+    }
+  }
+
+  p {
+    @include reset;
+  }
+}

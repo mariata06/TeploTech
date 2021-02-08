@@ -1,3 +1,25 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato";
+  src: local("lato regular"), local("lato-regular"), url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Lato";
+  src: local("lato medium"), local("lato-medium"), url("../fonts/lato-medium.woff2") format("woff2"), url("../fonts/lato-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Lato";
+  src: local("lato bold"), local("lato-bold"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,6 +66,9 @@ a {
   padding-left: 83px;
   padding-right: 83px;
   padding-bottom: 15px; }
+  @media (max-width: 1440px) {
+    .page-header {
+      width: 1440px; } }
 
 .navigation {
   max-width: 1764px;
@@ -81,14 +106,19 @@ a {
       opacity: 0.7; }
 
 .intro {
-  min-height: 720px; }
+  background-color: grey; }
 
 .intro__text {
   height: 100%;
+  width: 1244px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 90px; }
+  @media (max-width: 1440px) {
+    .intro__text {
+      width: 1000px; } }
   .intro__text h1 {
     margin: 0;
     font-size: 48px;
@@ -133,7 +163,12 @@ a {
     margin-bottom: 90px; }
 
 .swiper-slide {
-  background-size: 100%; }
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  @media (max-width: 1440px) {
+    .swiper-slide {
+      background-size: cover; } }
 
 .swiper-slide--first {
   background-image: url("../img/slide1-desktop@1x.png"); }
@@ -185,16 +220,25 @@ a {
 
 .swiper-button-prev {
   left: 37px; }
+  @media (max-width: 1440px) {
+    .swiper-button-prev {
+      left: 70px; } }
 
 .swiper-button-next {
   right: 37px; }
+  @media (max-width: 1440px) {
+    .swiper-button-next {
+      right: 70px; } }
   .swiper-button-next svg {
     -webkit-transform: translate(-50%, -50%) rotate(-180deg);
             transform: translate(-50%, -50%) rotate(-180deg); }
 
 .container {
-  max-width: 1244px;
+  max-width: 1140px;
   margin: 0 auto; }
+  @media (max-width: 1440px) {
+    .container {
+      width: 1000px; } }
 
 .button {
   font-family: "Roboto", "Arial", sans-serif;
@@ -210,7 +254,10 @@ a {
     opacity: 0.7; }
 
 .dignities__content {
-  padding: 110px 52px 0 52px; }
+  padding: 110px 0 0; }
+  @media (max-width: 1440px) {
+    .dignities__content {
+      width: 1000px; } }
   .dignities__content h2 {
     margin: 0;
     font-size: 36px;
@@ -248,6 +295,9 @@ a {
   position: relative;
   text-align: center;
   margin-bottom: 112px; }
+  @media (max-width: 1440px) {
+    .dignities__item {
+      width: 250px; } }
   .dignities__item::before {
     content: "";
     position: absolute;
@@ -285,8 +335,14 @@ a {
   .dignities__item--engineer::after {
     content: url("../img/icon-engineer.svg"); }
 
+.service {
+  background: #ffffff;
+  background-image: radial-gradient(#e0e0e0 7%, transparent 0), radial-gradient(#e0e0e0 7%, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px; }
+
 .service__content {
-  padding: 110px 52px 0 52px; }
+  padding: 110px 0; }
   .service__content h2 {
     margin: 0;
     font-size: 36px;
@@ -313,5 +369,213 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 70px; }
+
+.service__item {
+  margin-right: 50px;
+  position: relative; }
+
+.service__item-desc {
+  padding: 36px 40px 60px 26px;
+  position: absolute;
+  top: 70px;
+  right: -30px;
+  width: 386px;
+  border: 10px solid #f2994a; }
+  .service__item-desc span {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f2994a;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    position: absolute;
+    top: 80px;
+    left: -90px; }
+  .service__item-desc h3 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 12px; }
+  .service__item-desc p,
+  .service__item-desc a {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 35px; }
+  .service__item-desc a {
+    text-transform: uppercase;
+    letter-spacing: 15%; }
+    .service__item-desc a:focus, .service__item-desc a:hover {
+      opacity: 0.7; }
+
+.service__note {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 270px;
+  margin-left: auto;
+  margin-right: 50px;
+  text-align: right;
+  position: relative; }
+  .service__note b {
+    font-size: 84px;
+    line-height: 101px;
+    font-weight: 700;
+    opacity: 0.2; }
+  .service__note::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 110px;
+    right: -20px;
+    top: 15px;
+    background-color: #000000; }
+
+.conditions {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 1920px;
+  padding-top: 110px;
+  padding-bottom: 214px;
+  background-image: url("../img/process-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 250px left 80px;
+  background-size: 45%; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .conditions {
+      background-image: url("../img/process-bg-desktop@2x.png"); } }
+  @media (max-width: 1440px) {
+    .conditions {
+      width: 1440px; } }
+
+.conditions__content h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 192px; }
+  .conditions__content h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    bottom: -60px;
+    background-color: #f2994a; }
+
+.conditions__content ol {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  counter-reset: my-counter;
+  /* Задаём имя счетчика */
+  width: 520px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1440px) {
+    .conditions__content ol {
+      width: 470px; } }
+
+.conditions__content li {
+  width: 210px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 110px; }
+  @media (max-width: 1440px) {
+    .conditions__content li {
+      width: 200px; } }
+  .conditions__content li::before {
+    content: counter(my-counter, decimal-leading-zero);
+    /* Выводим число перед каждой цифрой будет ноль */
+    counter-increment: my-counter;
+    /* Увеличиваем значение счётчика */
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    left: -90px;
+    top: 0;
+    position: absolute; }
+  .conditions__content li::after {
+    position: absolute;
+    display: block;
+    left: -70px;
+    top: 20px; }
+
+.conditions__content .conditions__item--smartphone::after {
+  content: url("../img/icon-badge-smartphone.svg"); }
+
+.conditions__content .conditions__item--list::after {
+  content: url("../img/icon-badge-list.svg"); }
+
+.conditions__content .conditions__item--contract::after {
+  content: url("../img/icon-badge-contract.svg"); }
+
+.conditions__content .conditions__item--medal::after {
+  content: url("../img/icon-badge-medal.svg"); }
+
+.conditions__content p {
+  margin: 0; }
+
+.development {
+  min-height: 670px;
+  background-image: url("../img/heatingsystems-bg-desktop@1x.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .development {
+      background-image: url("../img/heatingsystems-bg-desktop@2x.png"); } }
+
+.projects {
+  min-height: 900px;
+  background: #ffffff;
+  background-image: radial-gradient(#e0e0e0 7%, transparent 0), radial-gradient(#e0e0e0 7%, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  padding-top: 120px;
+  padding-bottom: 90px; }
+
+.projects__swiper-slide h3,
+.projects__swiper-slide p {
+  margin: 0; }
+
+.projects__swiper-slide h3 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #000000;
+  width: 560px;
+  text-transform: uppercase; }
+
+.projects__item-desc {
+  width: 650px;
+  border: 10px solid #f2994a;
+  padding: 30px 90px 62px 30px; }
+  @media (max-width: 1440px) {
+    .projects__item-desc {
+      width: 600px;
+      padding: 30px; } }

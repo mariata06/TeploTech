@@ -16,6 +16,8 @@ $max-tablet-width: 1023px; // максимум для версии пишем к
 $max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)
 $min-tablet-width: 768px;
 $min-mobile-width: 320px;
+$max-desktop-width: 1920px;
+//$big-desktop-width: 1440px;
 
 //RETINA VARIABLES
 $retina-dpi: 144dpi;

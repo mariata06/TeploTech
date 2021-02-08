@@ -1,0 +1,171 @@
+.projects {
+  min-height: 900px;
+  background: $white;
+  background-image: radial-gradient($light-grey-2 7%, transparent 0),
+    radial-gradient($light-grey-2 7%, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.projects__swiper-slide {
+  position: relative;
+
+  h3,
+  p {
+    @include reset;
+  }
+
+  h3 {
+    @include title ($font-28, $line-height-34, $regular, $black);
+    width: 560px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .projects__item-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: 1440px) {
+      width: 520px;
+      height: auto;
+    }
+  }
+}
+
+.projects__item-desc {
+  max-width: 510px;
+  border: 10px solid $orange;
+  padding: 30px 90px 62px 30px;
+
+  @media (max-width: 1440px) {
+    max-width: 470px;
+    padding: 20px;
+    //padding-right: 40px;
+  }
+
+  .projects__item-name {
+    @include text ($font-36, $line-height-43, $bold);
+    text-transform: uppercase;
+    width: 530px;
+    margin-bottom: 20px;
+  }
+
+  .projects__item-address {
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+      content: url("../img/icon-pin.svg");
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  .projects__item-details {
+    padding-left: 50px;
+    position: relative;
+    //width: 530px;
+
+    &::before {
+      content: url("../img/icon-description.svg");
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+.projects__swiper-button {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(42.71deg, #ff8a00 24%, #ffac07 76%);
+  display: block;
+
+  svg {
+    fill: transparent;
+    stroke: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 15px;
+    min-height: 15px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.projects__swiper-container {
+  margin-bottom: 108px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    &::after {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 830px;
+    top: unset;
+    bottom: 70px;
+
+    @media (max-width: 1440px) {
+      left: 700px;
+      bottom: 50px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 210px;
+    top: unset;
+    bottom: 70px;
+
+    @media (max-width: 1440px) {
+      bottom: 50px;
+    }
+
+    svg {
+      transform: translate(-50%, -50%) rotate(-180deg);
+    }
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    background-color: $black;
+  }
+}
+
+.projects__note {
+  @include text ($font-24, $line-height-29, $regular);
+  text-transform: uppercase;
+  width: 770px;
+  margin-right: auto;
+  padding-left: 20px;
+  text-align: left;
+  position: relative;
+
+  b {
+    @include text ($font-84, $line-height-101, $bold);
+    opacity: 0.2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 110px;
+    left: 0;
+    top: 15px;
+    background-color: $black;
+  }
+}
