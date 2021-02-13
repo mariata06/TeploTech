@@ -100,7 +100,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-/*
+// отслеживает за обновлением js
 gulp.task("js", function (done) {
   pump([
       gulp.src("source/js/*.js"),
@@ -109,7 +109,9 @@ gulp.task("js", function (done) {
     done
   );
 });
-*/
+
+/* Минификация js когда необходимо по запросу */
+/*
 gulp.task("min-js", function (done) {
   pump([
       gulp.src("source/js/*.js"),
@@ -122,6 +124,7 @@ gulp.task("min-js", function (done) {
     done
   );
 });
+*/
 
 gulp.task("server", function () {
   server.init({
@@ -135,8 +138,9 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  //gulp.watch("source/js/**/*.js", gulp.series("js"));
-  gulp.watch("source/js/**/*.js", gulp.series("min-js"));
+  // отслеживает за обновлением js
+  gulp.watch("source/js/**/*.js", gulp.series("js"));
+  //gulp.watch("source/js/**/*.js", gulp.series("min-js"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
@@ -145,7 +149,7 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html", "sprite", "copy_css", "min-js"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html", "sprite", "copy_css"));
 gulp.task("start", gulp.series("build", "server"));
 
 /*

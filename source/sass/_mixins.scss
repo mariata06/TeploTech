@@ -31,3 +31,11 @@
   bottom: -60px;
   background-color: $orange;
 }
+
+@mixin dots-bg {
+  background: $white;
+  background-image: radial-gradient($light-grey-2 7%, transparent 0),
+    radial-gradient($light-grey-2 7%, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}

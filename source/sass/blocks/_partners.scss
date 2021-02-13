@@ -1,0 +1,16 @@
+.partners {
+  min-height: 200px;
+  background-image: url("../img/partners-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  //margin: 0 auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/partners-desktop@2x.png");
+  }
+
+  @media (max-width: 1440px) {
+    min-height: 150px;
+    width: 1440px;
+  }
+}

@@ -2,7 +2,6 @@
   min-height: 670px;
   background-image: url("../img/heatingsystems-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  //height: auto;
   background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -12,6 +11,5 @@
   @media (max-width: 1440px) {
     min-height: 500px;
     width: 1440px;
-    //background-size: cover;
   }
 }

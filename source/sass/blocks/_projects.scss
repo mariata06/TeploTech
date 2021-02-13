@@ -1,10 +1,6 @@
 .projects {
+  @include dots-bg;
   min-height: 900px;
-  background: $white;
-  background-image: radial-gradient($light-grey-2 7%, transparent 0),
-    radial-gradient($light-grey-2 7%, transparent 0);
-  background-size: 36px 36px;
-  background-position: 0 0, 18px 18px;
   padding-top: 120px;
   padding-bottom: 90px;
 }
@@ -23,6 +19,10 @@
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    @media (max-width: 1440px) {
+      width: 480px;
+    }
   }
 
   .projects__item-image {
@@ -43,9 +43,9 @@
   padding: 30px 90px 62px 30px;
 
   @media (max-width: 1440px) {
-    max-width: 470px;
+    width: 450px;
     padding: 20px;
-    //padding-right: 40px;
+    padding-right: 60px;
   }
 
   .projects__item-name {
@@ -53,6 +53,10 @@
     text-transform: uppercase;
     width: 530px;
     margin-bottom: 20px;
+
+    @media (max-width: 1440px) {
+      width: 420px;
+    }
   }
 
   .projects__item-address {
