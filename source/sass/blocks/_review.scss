@@ -59,13 +59,8 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 110px;
+    @include section-note-after;
     right: -20px;
     top: 15px;
-    background-color: $black;
   }
 }

@@ -74,7 +74,6 @@
   .projects__item-details {
     padding-left: 50px;
     position: relative;
-    //width: 530px;
 
     &::before {
       content: url("../img/icon-description.svg");
@@ -163,13 +162,8 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 110px;
+    @include section-note-after;
     left: 0;
     top: 15px;
-    background-color: $black;
   }
 }

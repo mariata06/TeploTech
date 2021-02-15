@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Теплотех отопление</title>
+  <meta name="Description" content="проектирование и монтаж системы отопления, изготовление оборудование отопления, теплонасосы">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <!--<link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin/>-->
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/lato-medium.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin/>
   <link rel="preload" href="css/style.min.css" as="style" />
-  <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="preload" href="js/sliders.js" as="script" />
+  <link rel="preload" href="js/accordion-popups.js" as="script" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -132,7 +133,7 @@
                 <!-- 1х: 530px; 2x: 1060px -->
                 <source type="image/webp" media="(max-width: 1920px)" srcset="img/ventilation-desktop@1x.webp 1x, img/ventilation-desktop@2x.webp 2x">
                 <!-- 1х: 530px; 2x: 1060px -->
-                <img source="img/ventilation-desktop@1x.png" src="img/ventilation-desktop@1x.png" srcset="img/ventilation-desktop@2x.png 2x" alt="Системы вентиляции" width="530" height="530">
+                <img class="lazyload" source="img/ventilation-desktop@1x.png" data-src="img/ventilation-desktop@1x.png" srcset="img/ventilation-desktop@2x.png 2x" alt="Системы вентиляции" width="530" height="530">
               </picture>
               <div class="service__item-desc">
                 <span>услуга</span>
@@ -146,7 +147,7 @@
                 <!-- 1х: 530px; 2x: 1060px -->
                 <source type="image/webp" media="(max-width: 1920px)" srcset="img/heating-desktop@1x.webp 1x, img/heating-desktop@2x.webp 2x">
                 <!-- 1х: 530px; 2x: 1060px -->
-                <img source="img/heating-desktop@1x.png" src="img/heating-desktop@1x.png" srcset="img/heating-desktop@2x.png 2x" alt="Системы отопления" width="530" height="530">
+                <img class="lazyload" source="img/heating-desktop@1x.png" data-src="img/heating-desktop@1x.png" srcset="img/heating-desktop@2x.png 2x" alt="Системы отопления" width="530" height="530">
               </picture>
               <div class="service__item-desc">
                 <span>услуга</span>
@@ -208,7 +209,7 @@
                     <!-- 1х: 560px; 2x: 1120px -->
                     <source type="image/webp" media="(max-width: 1920px)" srcset="img/heatpump-desktop@1x.webp 1x, img/heatpump-desktop@2x.webp 2x">
                     <!-- 1х: 560px; 2x: 1120px -->
-                    <img source="img/heatpump-desktop@1x.png" src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
+                    <img class="lazyload" source="img/heatpump-desktop@1x.png" data-src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
                   </picture>
                 </div>
               </div>
@@ -225,7 +226,7 @@
                     <!-- 1х: 560px; 2x: 1120px -->
                     <source type="image/webp" media="(max-width: 1920px)" srcset="img/heatpump-desktop@1x.webp 1x, img/heatpump-desktop@2x.webp 2x">
                     <!-- 1х: 560px; 2x: 1120px -->
-                    <img source="img/heatpump-desktop@1x.png" src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
+                    <img class="lazyload" source="img/heatpump-desktop@1x.png" data-src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
                   </picture>
                 </div>
               </div>
@@ -242,7 +243,7 @@
                     <!-- 1х: 560px; 2x: 1120px -->
                     <source type="image/webp" media="(max-width: 1920px)" srcset="img/heatpump-desktop@1x.webp 1x, img/heatpump-desktop@2x.webp 2x">
                     <!-- 1х: 560px; 2x: 1120px -->
-                    <img source="img/heatpump-desktop@1x.png" src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
+                    <img class="lazyload" source="img/heatpump-desktop@1x.png" data-src="img/heatpump-desktop@1x.png" srcset="img/heatpump-desktop@2x.png 2x" alt="теплонасос Mitsubishi Heavy Industries" width="560" height="360">
                   </picture>
                 </div>
               </div>
@@ -302,13 +303,13 @@
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-petrov-desktop@1x.webp 1x, img/review-petrov-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
                 </picture>
                 <picture>
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-zolotova-desktop@1x.webp 1x, img/review-zolotova-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
                 </picture>
               </div>
               <div class="review__swiper-slide swiper-slide">
@@ -316,13 +317,13 @@
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-petrov-desktop@1x.webp 1x, img/review-petrov-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
                 </picture>
                 <picture>
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-zolotova-desktop@1x.webp 1x, img/review-zolotova-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
                 </picture>
               </div>
               <div class="review__swiper-slide swiper-slide">
@@ -330,13 +331,13 @@
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-petrov-desktop@1x.webp 1x, img/review-petrov-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-petrov-desktop@1x.png" srcset="img/review-petrov-desktop@2x.png 2x" alt="автор отзыва иван Петров" width="545" height="346">
                 </picture>
                 <picture>
                   <!-- 1х: 545px; 2x: 1090px -->
                   <source type="image/webp" media="(max-width: 1920px)" srcset="img/review-zolotova-desktop@1x.webp 1x, img/review-zolotova-desktop@2x.webp 2x">
                   <!-- 1х: 545px; 2x: 1090px -->
-                  <img source="img/review-petrov-desktop@1x.png" src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
+                  <img class="lazyload" source="img/review-petrov-desktop@1x.png" data-src="img/review-zolotova-desktop@1x.png" srcset="img/review-zolotova-desktop@2x.png 2x" alt="автор отзыва лариса золотова" width="545" height="346">
                 </picture>
               </div>
             </div>
@@ -368,8 +369,8 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content form__question-content--open" name="text_question" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta nisl a ligula dignissim, sed facilisis elit ornare. In sed auctor erat, at laoreet magna. Suspendisse interdum mattis pharetra. Nam at magna sit amet nunc tincidunt aliquam fermentum id erat. Nunc elementum enim nec feugiat maximus."></textarea>
-                  <label></label>
+                  <textarea id="question-1" class="form__question-content form__question-content--open" name="text_question" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta nisl a ligula dignissim, sed facilisis elit ornare. In sed auctor erat, at laoreet magna. Suspendisse interdum mattis pharetra. Nam at magna sit amet nunc tincidunt aliquam fermentum id erat. Nunc elementum enim nec feugiat maximus."></textarea>
+                  <label for="question-1" class="visually-hidden">Задайте вопрос</label>
                 </div>
                 <div class="form__question">
                   <button tabindex="0" class="form__question-button">
@@ -378,8 +379,8 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
-                  <label></label>
+                  <textarea id="question-2" class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
+                  <label for="question-2" class="visually-hidden">Задайте вопрос</label>
                 </div>
                 <div class="form__question">
                   <button tabindex="0" class="form__question-button">
@@ -388,8 +389,8 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
-                  <label></label>
+                  <textarea id="question-3" class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
+                  <label for="question-3" class="visually-hidden">Задайте вопрос</label>
                 </div>
                 <div class="form__question">
                   <button tabindex="0" class="form__question-button">
@@ -398,8 +399,8 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
-                  <label></label>
+                  <textarea id="question-4" class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
+                  <label for="question-4" class="visually-hidden">Задайте вопрос</label>
                 </div>
               </div>
             </form>
@@ -480,7 +481,7 @@
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/sliders.js"></script>
   <script src="js/accordion-popups.js"></script>
 
 </body>

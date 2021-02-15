@@ -29,18 +29,14 @@
 
   &--callback,
   &--offer {
-    //display: none;
+    display: block;
     width: 819px;
     padding: 64px 100px 66px 99px;
-
-    &--show {
-      display: block;
-    }
   }
 
   &--consultation {
+    display: block;
     width: 100%;
-    //display: none;
     background-color: brown;
     background-image: url("../img/popupconsult-bg-desktop@1x.png");
 
@@ -58,10 +54,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/popupconsult-bg-desktop@2x.png");
-    }
-
-    &--show {
-      display: block;
     }
 
     .popup__content {

@@ -37,92 +37,88 @@
     border: 1px solid $white;
     color: $white;
   }
+}
 
-  .specialists__list {
-    @include list-reset;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.specialists__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.specialists__item {
+  width: 270px;
+  padding: 140px 10px 0;
+  position: relative;
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+
+  @media (max-width: 1440px) {
+    width: 240px;
   }
 
-  .specialists__item {
-    width: 270px;
-    padding: 140px 10px 0;
-    position: relative;
-    color: $white;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: baseline;
-
-    @media (max-width: 1440px) {
-      width: 240px;
-    }
-
-    &:hover {
-      &::after {
-        filter: drop-shadow(0 10px 1px rgba(255, 172, 7, 0.25));
-      }
-
-      p:first-of-type {
-        color: $orange;
-      }
+  &:hover {
+    &::after {
+      filter: drop-shadow(0 10px 1px rgba(255, 172, 7, 0.25));
     }
 
     p:first-of-type {
-      @include title ($font-16, $line-height-24, $bold, $white);
-      text-transform: uppercase;
-      min-height: 70px;
+      color: $orange;
     }
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 100px;
-      display: block;
-      border-radius: 20px;
-      background-color: $white;
-      //box-shadow: 0 0 25px rgba(168, 168, 168, 0.25);
-      box-shadow: 0 0 25px rgba(172, 172, 172, 0.25);
-      //filter: drop-shadow(0 10px 1px rgba(255, 172, 7, 0.25));
-      //backdrop-filter: blur(5px);
-      //filter: blur(0 10px 1px rgba(255, 172, 7, 0.25));
-    }
+  p:first-of-type {
+    @include title ($font-16, $line-height-24, $bold, $white);
+    text-transform: uppercase;
+    min-height: 70px;
+  }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: 0 0 25px rgba(172, 172, 172, 0.25);
+  }
+
+  &::before {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    z-index: 10;
+  }
+
+  &--shield {
     &::before {
-      position: absolute;
-      top: 8%;
-      left: 50%;
-      transform: translateX(-50%) scale(0.9);
-      z-index: 10;
+      content: url("../img/icon-shield.svg");
     }
+  }
 
-    &--shield {
-      &::before {
-        content: url("../img/icon-shield.svg");
-      }
+  &--maintenance {
+    &::before {
+      content: url("../img/icon-maintenance2.svg");
     }
+  }
 
-    &--maintenance {
-      &::before {
-        content: url("../img/icon-maintenance2.svg");
-      }
+  &--engeneering {
+    &::before {
+      content: url("../img/icon-engeneering.svg");
     }
+  }
 
-    &--engeneering {
-      &::before {
-        content: url("../img/icon-engeneering.svg");
-      }
-    }
-
-    &--medal {
-      &::before {
-        content: url("../img/icon-medal.svg");
-      }
+  &--medal {
+    &::before {
+      content: url("../img/icon-medal.svg");
     }
   }
 }

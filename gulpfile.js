@@ -140,6 +140,7 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   // отслеживает за обновлением js
   gulp.watch("source/js/**/*.js", gulp.series("js"));
+  // включить, если нужна минификация js
   //gulp.watch("source/js/**/*.js", gulp.series("min-js"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -157,24 +158,4 @@ function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 }
 exports.deploy = deploy;
-*/
-
-/*
-var imagemin = require("imagemin"); // The imagemin module.
-var webp = require("imagemin-webp"); // imagemin's WebP plugin.
-var outputFolder = "./img"; // Output folder
-var PNGImages = "./img/*.png"; // PNG images
-var JPEGImages = "./img/*.jpg"; // JPEG images
-
-imagemin([PNGImages], outputFolder, {
-  plugins: [webp({
-    lossless: true // Losslessly encode images
-  })]
-});
-
-imagemin([JPEGImages], outputFolder, {
-  plugins: [webp({
-    quality: 65 // Quality setting from 0 to 100
-  })]
-});
 */

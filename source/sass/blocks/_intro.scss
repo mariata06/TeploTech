@@ -1,5 +1,4 @@
 .intro {
-  //min-height: 720px;
   background-color: grey;
 }
 
@@ -17,11 +16,9 @@
   }
 
   h1 {
-    margin: 0;
-    font-size: 48px;
-    line-height: 58px;
+    @include reset;
+    @include title ($font-48, $line-height-58, $bold, $white);
     text-transform: uppercase;
-    color: $white;
     width: 990px;
     margin-bottom: 30px;
   }
@@ -31,9 +28,9 @@
   }
 
   p {
+    @include reset;
+    @include text ($font-18, $line-height-29, $regular);
     color: $light-grey;
-    font-size: 18px;
-    line-height: 29px;
     width: 309px;
     margin-bottom: 30px;
   }
@@ -44,10 +41,8 @@
   }
 
   li {
+    @include text ($font-16, $line-height-19, $medium);
     color: $light-grey;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 500;
     margin-right: 67px;
     position: relative;
     padding-left: 40px;
@@ -62,9 +57,7 @@
   }
 
   button {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 700;
+    @include text ($font-16, $line-height-19, $bold);
     margin-bottom: 90px;
   }
 }

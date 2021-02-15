@@ -39,3 +39,12 @@
   background-size: 36px 36px;
   background-position: 0 0, 18px 18px;
 }
+
+@mixin section-note-after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 110px;
+  background-color: $black;
+}
