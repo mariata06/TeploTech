@@ -1,0 +1,77 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+
+  h2 {
+    @include reset;
+    @include title ($font-36, $line-height-43, $bold, $black);
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      @include title-after;
+    }
+  }
+
+  p {
+    @include reset;
+    margin-bottom: 100px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  .popup__content {
+    background-color: $white;
+  }
+
+  &--callback,
+  &--offer {
+    //display: none;
+    width: 819px;
+    padding: 64px 100px 66px 99px;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &--consultation {
+    width: 100%;
+    //display: none;
+    background-color: brown;
+    background-image: url("../img/popupconsult-bg-desktop@1x.png");
+
+    h2,
+    p {
+      color: $white;
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      &::after {
+        display: none;
+      }
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/popupconsult-bg-desktop@2x.png");
+    }
+
+    &--show {
+      display: block;
+    }
+
+    .popup__content {
+      padding: 130px 390px 139px 390px;
+      background-color: transparent;
+
+      @media (max-width: 1440px) {
+        width: 1440px;
+        padding: 130px 250px 139px 250px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: $black;
+}
+
+.page-footer__content {
+  display: flex;
+  padding-top: 53px;
+  padding-bottom: 47px;
+  align-items: center;
+
+  @media (max-width: 1440px) {
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin-right: 245px;
+
+    @media (max-width: 1440px) {
+      margin-right: 0;
+    }
+  }
+
+  .page-footer__copyright {
+    @include reset;
+    @include text ($font-12, $line-height-14, $regular);
+    color: $white;
+  }
+
+  .button {
+    margin-left: auto;
+    border: 2px solid $white;
+    color: $white;
+
+    @media (max-width: 1440px) {
+      margin-left: 0;
+    }
+  }
+}

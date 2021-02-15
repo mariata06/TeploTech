@@ -1,4 +1,4 @@
-.consultation {
+.questions {
   padding-top: 190px;
   padding-bottom: 182px;
 
@@ -15,13 +15,35 @@
   }
 }
 
-.consultation__content {
+.questions__content {
   background-image: url("../img/smartphone-bg-desktop@1x.png");
   background-size: 45%;
   background-repeat: no-repeat;
   background-position: top 100px right 0;
+  padding-right: 590px;
+
+  @media (max-width: 1440px) {
+    background-position: top 200px right 0;
+    padding-right: 450px;
+  }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/smartphone-bg-desktop@2x.png");
+  }
+
+  .questions__button {
+    display: block;
+    margin: 0 auto;
+    color: $white;
+  }
+
+  p {
+    @include reset;
+    @include text ($font-16, $line-height-19, $bold);
+    width: 550px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 44px;
   }
 }

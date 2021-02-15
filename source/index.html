@@ -45,7 +45,7 @@
               <div class="intro__text">
                 <h1>Проектирование и монтаж <span>систем&nbsp;отопления&nbsp;</span><br>любой&nbsp;сложности</h1>
                 <p>Вентеляция и отопление для промышленных и коммерческих объектов.</p>
-                <button type="button" class="intro__button button">Заказать расчет</button>
+                <button type="button" class="intro__button button button--request">Заказать расчет</button>
                 <ul class="intro__feature-list">
                   <li>Грамотное проектирование</li>
                   <li>Монтаж с гарантией</li>
@@ -58,7 +58,7 @@
               <div class="intro__text">
                 <h1>Проектирование и монтаж <span>систем&nbsp;отопления&nbsp;</span><br>любой&nbsp;сложности</h1>
                 <p>Вентеляция и отопление для промышленных и коммерческих объектов.</p>
-                <button type="button" class="intro__button button">Заказать расчет</button>
+                <button type="button" class="intro__button button button--request">Заказать расчет</button>
                 <ul class="intro__feature-list">
                   <li>Грамотное проектирование</li>
                   <li>Монтаж с гарантией</li>
@@ -71,7 +71,7 @@
               <div class="intro__text">
                 <h1>Проектирование и монтаж <span>систем&nbsp;отопления&nbsp;</span><br>любой&nbsp;сложности</h1>
                 <p>Вентеляция и отопление для промышленных и коммерческих объектов.</p>
-                <button type="button" class="intro__button button">Заказать расчет</button>
+                <button type="button" class="intro__button button button--request">Заказать расчет</button>
                 <ul class="intro__feature-list">
                   <li>Грамотное проектирование</li>
                   <li>Монтаж с гарантией</li>
@@ -84,7 +84,7 @@
               <div class="intro__text">
                 <h1>Проектирование и монтаж <span>систем&nbsp;отопления&nbsp;</span><br>любой&nbsp;сложности</h1>
                 <p>Вентеляция и отопление для промышленных и коммерческих объектов.</p>
-                <button type="button" class="intro__button button">Заказать расчет</button>
+                <button type="button" class="intro__button button button--request">Заказать расчет</button>
                 <ul class="intro__feature-list">
                   <li>Грамотное проектирование</li>
                   <li>Монтаж с гарантией</li>
@@ -287,7 +287,7 @@
               <p>Соблюдаем нормы и правила проведения проектных и монтажных работ</p>
             </li>
           </ul>
-          <button class="specialists__button button" type="button">Заказать бесплатную консультацию</button>
+          <button class="specialists__button button button--consultation" type="button">Заказать бесплатную консультацию</button>
         </div>
       </section>
 
@@ -356,10 +356,10 @@
         </div>
       </section>
 
-      <section class="consultation">
-        <div class="consultation__content container">
+      <section class="questions">
+        <div class="questions__content container">
           <h2>остались вопросы?</h2>
-            <form action="https://echo.htmlacademy.ru" method="post" class="consultation__form">
+            <form action="https://echo.htmlacademy.ru" method="post" class="questions__form form form--askquestions">
               <div class="form__accordion accordion">
                 <div class="form__question form__question--active">
                   <button tabindex="0" class="form__question-button form__question-button--active">
@@ -368,7 +368,7 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content form__question-content--open" name="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta nisl a ligula dignissim, sed facilisis elit ornare. In sed auctor erat, at laoreet magna. Suspendisse interdum mattis pharetra. Nam at magna sit amet nunc tincidunt aliquam fermentum id erat. Nunc elementum enim nec feugiat maximus."></textarea>
+                  <textarea class="form__question-content form__question-content--open" name="text_question" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta nisl a ligula dignissim, sed facilisis elit ornare. In sed auctor erat, at laoreet magna. Suspendisse interdum mattis pharetra. Nam at magna sit amet nunc tincidunt aliquam fermentum id erat. Nunc elementum enim nec feugiat maximus."></textarea>
                   <label></label>
                 </div>
                 <div class="form__question">
@@ -378,7 +378,7 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text" placeholder="Задайте вопрос"></textarea>
+                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
                   <label></label>
                 </div>
                 <div class="form__question">
@@ -388,7 +388,7 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text" placeholder="Задайте вопрос"></textarea>
+                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
                   <label></label>
                 </div>
                 <div class="form__question">
@@ -398,24 +398,90 @@
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
                   </button>
-                  <textarea class="form__question-content" name="text" placeholder="Задайте вопрос"></textarea>
+                  <textarea class="form__question-content" name="text_question" placeholder="Задайте вопрос"></textarea>
                   <label></label>
                 </div>
               </div>
-              <p>Получите дополнительную консультацию</p>
-              <button type="button" class="form__order-button button" aria-label="заказать консультацию">Заказать консультацию</button>
             </form>
+            <p>Получите дополнительную консультацию</p>
+            <button type="button" class="questions__button button button--consultation" aria-label="заказать консультацию">Заказать консультацию</button>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__content container">
+        <a href="#" class="page-footer__logo">
+          <img src="img/logo-bottom.svg" width="182" height="53" alt="Логотип сайта Теплотех отопление">
+        </a>
+        <p class="page-footer__copyright">&#169; 2019 Teplotech. Designed By ITOP Media.</p>
+        <button class="page-footer__button button button--callback" type="submit">Заказать звонок</button>
+      </div>
+    </footer>
+
+    <section class="overlay">
+      <div class="overlay__popup popup popup--offer">
+        <div class="popup__content">
+          <h2>Оформить заявку</h2>
+          <p>Мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="popup__form form--offer">
+            <label for="user-name">
+              <input class="form__input form__input--name" id="user-name" type="text" placeholder="Имя" name="user_name" required>
+            </label>
+            <label for="user-phone">
+              <input class="form__input form__input--phone" id="user-phone" type="tel" placeholder="Номер телефона" name="user_phone" required>
+            </label>
+            <button class="form__button button order-calculation" type="submit">Заказать расчет</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="overlay">
+      <div class="overlay__popup popup popup--callback">
+        <div class="popup__content">
+          <h2>Заказать звонок</h2>
+          <p>Мы свяжемся с вами в ближайшее время</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="popup__form form--callback">
+            <label for="name">
+              <input class="form__input form__input--name" id="name" type="text" placeholder="Имя" name="user_name" required>
+            </label>
+            <label for="phone-number">
+              <input class="form__input form__input--phone" id="phone-number" type="text" placeholder="Номер телефона" name="user_phone" required>
+            </label>
+            <button class="form__button button order-callback" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="overlay">
+      <div class="overlay__popup popup popup--consultation">
+        <div class="popup__content">
+          <h2>Хотите подробнее узнать сколько можно сэкономить на отоплении в год?</h2>
+          <p>Оставьте заявку на бесплатную консультацию</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="popup__form form--consultation">
+            <label for="square">
+              <input class="form__input form__input--square" id="square" type="text" name="object_square" placeholder="Площадь объекта, кв.м" required>
+            </label>
+            <label for="heating">
+              <input class="form__input form__input--heating" id="heating" type="text" name="object_heating" placeholder="Используемое отопление" required>
+            </label>
+            <label for="phone">
+              <input class="form__input form__input--phone" id="phone" type="text" name="user_phone" placeholder="+380 (00) 000 00 00" required>
+            </label>
+            <button class="form__button button order-consultation" type="submit">Узнать сейчас</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="js/vendor.js" defer=""></script>
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
   <script src="js/main.js"></script>
-  <script src="js/accordion.js"></script>
+  <script src="js/accordion-popups.js"></script>
 
 </body>
 

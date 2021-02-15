@@ -62,16 +62,72 @@
 
 .form__accordion {
   margin-bottom: 60px;
+  width: 100%;
 }
 
-form {
+.form--askquestions {
   width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  p {
-    @include reset;
-    @include text ($font-16, $line-height-19, $bold);
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 44px;
+.form--consultation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .form__button {
+    margin: 0;
+    padding: 15px;
+    width: 270px;
+
+    @media (max-width: 1440px) {
+      width: 200px;
+    }
   }
+
+  input {
+    @include text ($font-16, $line-height-19, $regular);
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 270px;
+    border-bottom: 2px solid $orange;
+    background-color: transparent;
+    color: $white;
+
+    &::placeholder {
+      color: $medium-grey;
+    }
+
+    @media (max-width: 1440px) {
+      width: 220px;
+    }
+  }
+}
+
+.form--callback,
+.form--offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  input {
+    border: none;
+    border-bottom: 1px solid $black;
+    width: 270px;
+    padding: 5px;
+  }
+
+  input::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.form__button {
+  @include text ($font-16, $line-height-19, $bold);
+  margin: 0 auto;
+  margin-top: 63px;
 }
