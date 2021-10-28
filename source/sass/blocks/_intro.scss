@@ -1,5 +1,7 @@
 .intro {
   background-color: grey;
+  height: 720px;
+  min-height: 720px;
 }
 
 .intro__text {
@@ -62,46 +64,60 @@
   }
 }
 
-.swiper-slide {
+.intro__swiper-container {
   height: 100%;
-  //background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
+  position: relative;
+  overflow: hidden;
 
-  @media (max-width: 1440px) {
-    background-size: cover;
+  .intro__swiper-slide {
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    //background-size: auto;
+
+    @media (max-width: 1440px) {
+      //height: auto;
+      background-size: auto;
+      //background-size: cover;
+      //background-size: contain;
+    }
   }
-}
 
-.swiper-slide--first {
-  background-image: url("../img/slide1-desktop@1x.png");
+  .intro__swiper-slide--first {
+    background-image: url("../img/slide1-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/slide1-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/slide1-desktop@2x.png");
+      //background-size: auto;
+    }
+
+    @media (max-width: 1440px) {
+      //background-size: auto;
+    }
   }
-}
 
-.swiper-slide--second {
-  background-image: url("../img/slide2-desktop@1x.png");
+  .intro__swiper-slide--second {
+    background-image: url("../img/slide2-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/slide2-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/slide2-desktop@2x.png");
+    }
   }
-}
 
-.swiper-slide--third {
-  background-image: url("../img/slide3-desktop@1x.png");
+  .intro__swiper-slide--third {
+    background-image: url("../img/slide3-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/slide3-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/slide3-desktop@2x.png");
+    }
   }
-}
 
-.swiper-slide--fourth {
-  background-image: url("../img/slide4-desktop@1x.png");
+  .intro__swiper-slide--fourth {
+    background-image: url("../img/slide4-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/slide4-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/slide4-desktop@2x.png");
+    }
   }
 }
 
