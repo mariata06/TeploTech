@@ -5,11 +5,8 @@
 }
 
 .intro__text {
-  height: 100%;
   width: 1244px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 140px;
   padding-bottom: 90px;
 
@@ -73,13 +70,9 @@
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-    //background-size: auto;
 
-    @media (max-width: 1440px) {
-      //height: auto;
-      background-size: auto;
-      //background-size: cover;
-      //background-size: contain;
+    @media (max-width: 1680px) {
+      background-size: cover;
     }
   }
 
@@ -88,11 +81,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/slide1-desktop@2x.png");
-      //background-size: auto;
-    }
-
-    @media (max-width: 1440px) {
-      //background-size: auto;
     }
   }
 
