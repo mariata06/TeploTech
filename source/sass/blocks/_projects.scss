@@ -103,6 +103,8 @@
 
 .projects__swiper-container {
   margin-bottom: 108px;
+  position: relative;
+  overflow: hidden;
 
   .swiper-button-next,
   .swiper-button-prev {

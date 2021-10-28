@@ -167,8 +167,8 @@ a {
 
 .swiper-slide {
   height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: auto; }
   @media (max-width: 1440px) {
     .swiper-slide {
       background-size: cover; } }
@@ -646,7 +646,9 @@ a {
             transform: translate(-50%, -50%); }
 
 .projects__swiper-container {
-  margin-bottom: 108px; }
+  margin-bottom: 108px;
+  position: relative;
+  overflow: hidden; }
   .projects__swiper-container .swiper-button-next::after,
   .projects__swiper-container .swiper-button-prev::after {
     display: none; }
@@ -849,7 +851,12 @@ a {
 
 .review__swiper-container {
   width: 100%;
-  min-height: 440px; }
+  min-height: 440px;
+  overflow: hidden;
+  position: relative; }
+  .review__swiper-container .swiper-button-prev,
+  .review__swiper-container .swiper-button-next {
+    display: none; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px; }

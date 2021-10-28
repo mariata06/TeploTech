@@ -25,6 +25,13 @@
 .review__swiper-container {
   width: 100%;
   min-height: 440px;
+  overflow: hidden;
+  position: relative;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {

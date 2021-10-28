@@ -1,5 +1,5 @@
-# Cruises-to-Antarctica
-Cruises to Antarctica
+# TeploTech
+Teplotech heating
 
 Установка и сборка проекта
 1. Сначала надо скачать папку с проектом с гитхаба
