@@ -111,11 +111,8 @@ a {
   min-height: 720px; }
 
 .intro__text {
-  height: 100%;
   width: 1244px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 140px;
   padding-bottom: 90px; }
   @media (max-width: 1440px) {
@@ -175,9 +172,9 @@ a {
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat; }
-    @media (max-width: 1440px) {
+    @media (max-width: 1680px) {
       .intro__swiper-container .intro__swiper-slide {
-        background-size: auto; } }
+        background-size: cover; } }
   .intro__swiper-container .intro__swiper-slide--first {
     background-image: url("../img/slide1-desktop@1x.png"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
